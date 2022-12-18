@@ -1,7 +1,7 @@
 import {
   createServer
 } from 'http'
-const PORT = 1337
+const PORT = process.env.PORT || 8080
 import crypto from 'crypto'
 const WEBSOCKET_MAGIC_STRING_KEY = '258EAFA5-E914-47DA-95CA-C5AB0DC85B11'
 const SEVEN_BITS_INTEGER_MARKER = 125
